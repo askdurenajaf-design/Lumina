@@ -17,7 +17,7 @@ export function Sidebar({ tasks, currentTaskId, onSelectTask, onNewTask }: Sideb
           <div className="p-2 bg-blue-600 rounded-lg">
             <BookOpen size={20} className="text-white" />
           </div>
-          <span className="font-bold text-xl tracking-tight">Lumina</span>
+          <span className="font-bold text-xl tracking-tight">Studiq</span>
         </div>
 
         <button

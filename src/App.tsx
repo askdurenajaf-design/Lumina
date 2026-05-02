@@ -54,7 +54,7 @@ export default function App() {
 
   // Load from local storage
   useEffect(() => {
-    const saved = localStorage.getItem('lumina_tasks');
+    const saved = localStorage.getItem('studiq_tasks');
     if (saved) {
       try {
         setTasks(JSON.parse(saved));
@@ -66,7 +66,7 @@ export default function App() {
 
   // Save to local storage
   useEffect(() => {
-    localStorage.setItem('lumina_tasks', JSON.stringify(tasks));
+    localStorage.setItem('studiq_tasks', JSON.stringify(tasks));
   }, [tasks]);
 
   const handleNewTask = (category: TaskCategory = 'general', title: string = 'New Session') => {
@@ -200,7 +200,7 @@ export default function App() {
             </button>
             <div className="flex items-center gap-2">
               <span className="font-bold text-slate-900 truncate">
-                {currentTask ? currentTask.title : 'Study Assistant'}
+                {currentTask ? currentTask.title : 'Studiq'}
               </span>
               {currentTask && (
                 <div className="px-2 py-0.5 rounded-full bg-slate-100 border border-slate-200 text-[10px] font-bold uppercase tracking-wider text-slate-500">
