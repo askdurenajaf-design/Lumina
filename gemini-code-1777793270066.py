@@ -2,7 +2,7 @@ import streamlit as st
 import google.generativeai as genai
 
 # Setup
-genai.configure(api_key="YOUR_API_KEY_HERE")
+genai.configure(api_key="AIzaSyB-befTXMuophz04-Pjx0o9mDCdIGrwzqU")
 model = genai.GenerativeModel('gemini-1.5-flash')
 
 st.title("📚 Student Homework Assistant")
